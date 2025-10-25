@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: antiquewhite;
+    color:rgb(189, 189, 192);
+    font-size: 20px;
+    font-family:'Orbitron', sans-serif;
+    font-weight: 10px;
+}
+
+/*menu*/
+.menu{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(20, 109, 182);
+    left: 0;
+    margin: 0;
+    z-index: 5;
+    padding: 20px;
+    
+    
+}
+
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    font-size: 18px;
+    font-weight: 20px;
+}
+
+.menu a{
+    position: relative;
+    text-align: center;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: blue;
+}
+
+.menu a::after{
+    content:"" ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2%;
+    background-color: blue;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+/* hero */
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-hero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.hero-content{
+    width: 550px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    z-index: 2;
+    top: 75%;
+    translate:  traslateY(-20);
+    background-color:rgb(20, 109, 182) ;
+    border-radius: 15px;
+}
+
+.hero-content:hover{
+    background-color: aliceblue;
+    color: blue;
+}
+
+.hero-content h1{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-content p{
+    font-size: 1rem;
+    font-weight:300px ;
+}
+ 
+/*Ofertas*/
+.offers-container{
+   display: flex;
+   justify-content: center;
+   gap:2rem;
+   width: 90%;
+   margin: 0 auto 60px auto;
+   text-align: center;
+}
+
+.new-ofertas{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(204, 198, 198);
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+}
+
+.offers-card{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.offers-card h3{
+    color: rgb(20, 109, 168);
+    font-size: 15px;
+    margin: 30px;
+}
+
+.offers-card p{
+    color: rgb(20, 109, 168);
+    font-size: 12px;
+}
+
+.offers-card img{
+    width: 100px;
+    height: auto;
+}
+
+.offers-card button{
+   width: 100px;
+   height: auto;
+   background-color: rgb(20, 109, 168);
+   margin: 20px;
+   padding: 5px;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   transform: transform 0.3s ease;
+}
+
+.offers-card:hover{
+    transform: scale(1.05s);
+}
+
+.offers-card button:hover{
+    background-color:white;
+    color: rgb(20, 109, 168);
+}
+
+/* seccion de marca */
+.mark-tech{
+    width:100%;
+    background-color: rgb(20, 109, 182);
+    padding: 40px;
+}
+
+.mark-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mark-card{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(225, 251, 251);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.mark-card:hover{
+    transform: scale(1.05);
+}
+
+.mark-card img{
+    max-width: 150px;
+    max-height: auto;
+    object-fit: contain;
+}
+
+.mark-card h1{
+    display:flex;
+    justify-content: center;
+}
+
+/*Seccion del footer*/
+.footer{
+    background-color: rgb(20, 109, 168);
+    color: white;
+    padding: 40px 0 10px;
+    font-family: sans-serif;
+}
+
+.footer-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2rem;
+    text-align: left;
+}
+
+.footer-logo h3{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom:10px;
+}
+
+.footer-logo p{
+    font-size: 0.9rem;
+}
+
+.footer-links h4,
+.footer-contact h4{
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    display: inlinme-block;
+    padding-bottom: 5px;
+}
+
+.footer-links ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li{
+    margin: 6px 0;
+}
+
+.footer-links ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover{
+    color: lightgray;
+}
+
+.footer-contact p{
+    font-size: 0.9rem;
+    margin: 5px 0 ;
+}
+
+.footer-bottom{
+    text-align: center;
+    border-top: 1px solid rgb(255, 255,255,0.3);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
